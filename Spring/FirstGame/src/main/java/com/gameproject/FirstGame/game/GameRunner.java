@@ -1,9 +1,10 @@
 package com.gameproject.FirstGame.game;
 
 public class GameRunner {
-	MarioGame game;
+	//MarioGame game;
+	superContraGame game;
 	
-	public GameRunner(MarioGame game) {
+	public GameRunner(superContraGame game) {
 		this.game = game;
 		
 	}
