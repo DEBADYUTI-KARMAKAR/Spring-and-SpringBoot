@@ -5,7 +5,7 @@ import com.gameproject.FirstGame.game.MarioGame;
 import com.gameproject.FirstGame.game.Pacman;
 import com.gameproject.FirstGame.game.superContraGame;
 
-public class AppGamingBasicJava {
+public class App01GamingBasicJava {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
