@@ -1,6 +1,6 @@
 package com.gameproject.FirstGame.game;
 
-public class superContraGame {
+public class superContraGame implements GamingConsole {
 
 	public void Up() {
 		System.out.println("up");
