@@ -33,7 +33,8 @@ public class HelloWorldConfigaration {
 	
 	@Bean
 	public Person person3Parameters(String Name,int Age, Address address2) {// Name,Age,address2
-		return new Person(Name,Age,address2);
+		return new Person(Name,Age,address2
+				);
 	}
 	
 	@Bean(name = "address2")
