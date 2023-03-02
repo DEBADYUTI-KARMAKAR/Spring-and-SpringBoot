@@ -1,4 +1,4 @@
-package com.gameproject.FirstGame;
+package com.gameproject.FirstGame.helloworld;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
