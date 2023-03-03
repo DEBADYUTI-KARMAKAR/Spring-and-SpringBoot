@@ -1,5 +1,8 @@
 package com.gameproject.FirstGame.game;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Pacman implements GamingConsole {
 
 	public void Up() {
