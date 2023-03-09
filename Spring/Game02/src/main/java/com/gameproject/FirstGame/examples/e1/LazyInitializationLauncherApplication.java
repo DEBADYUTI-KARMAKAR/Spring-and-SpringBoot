@@ -1,4 +1,4 @@
-package com.gameproject.FirstGame.examples.a0;
+package com.gameproject.FirstGame.examples.e1;
 
 import java.util.Arrays;
 
