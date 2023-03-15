@@ -24,7 +24,11 @@ public class CoursejdbcRepository {
 			where id=?;
 			""";
 			
-	
+	private static String SELECT_QUERY =
+			"""
+				select * from course
+				where id = ?
+			""";
 			
 
 	public void insert(Course course) {
@@ -36,5 +40,8 @@ public class CoursejdbcRepository {
 		springJdbcTemplate.update(DELETE_QUERY, id);
 	}
 	
+	public Course findByID(long id) {
+		return springJdbcTemplate.queryForObject(SELECT_QUERY, new BeanPropertyRowMapper<>(Course.class) , id);
+	}
 	
 }
