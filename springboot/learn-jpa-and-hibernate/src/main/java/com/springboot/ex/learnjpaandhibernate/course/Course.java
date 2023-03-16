@@ -5,7 +5,7 @@ public class Course {
 	private String name;
 	private String author;
 	public Course() {
-		
+		// this is mandetory for select querry
 	}
 	public Course(long id, String name, String author) {
 		super();
