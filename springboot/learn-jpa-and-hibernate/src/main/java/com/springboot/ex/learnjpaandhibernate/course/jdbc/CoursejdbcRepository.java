@@ -8,7 +8,10 @@ import org.springframework.stereotype.Repository;
 
 import com.springboot.ex.learnjpaandhibernate.course.Course;
 
+import jakarta.transaction.Transactional;
+
 @Repository
+
 public class CoursejdbcRepository {
 
 	@Autowired
