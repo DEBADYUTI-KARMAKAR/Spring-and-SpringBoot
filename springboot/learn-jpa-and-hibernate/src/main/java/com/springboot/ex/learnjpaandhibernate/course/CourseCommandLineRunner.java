@@ -7,25 +7,28 @@ import org.springframework.stereotype.Component;
 import com.springboot.ex.learnjpaandhibernate.course.Course;
 import com.springboot.ex.learnjpaandhibernate.course.jdbc.CoursejdbcRepository;
 import com.springboot.ex.learnjpaandhibernate.course.jpa.CoursejpaRepository;
+import com.springboot.ex.learnjpaandhibernate.course.springdatajpa.CourseSpringDataJpaRepository;
 
 @Component
 public class CourseCommandLineRunner implements CommandLineRunner {
 //	@Autowired
 //	private CoursejdbcRepository repository;
 
-	@Autowired
-	private CoursejpaRepository repository;
+//	@Autowired
+//	private CoursejpaRepository repository;
 
+	@Autowired
+	private CourseSpringDataJpaRepository repository;
 	
 	@Override
 	public void run(String... args) throws Exception {
-		repository.insert(new Course(1, "AWS", "Unmeshanam"));
-		repository.insert(new Course(2, "JavaJPA", "Unmeshanam"));
-		repository.insert(new Course(3, "Python", "Unmeshanam"));
+		repository.save(new Course(1, "AWS", "Unmeshanam"));
+		repository.save(new Course(2, "JavaJPA", "Unmeshanam"));
+		repository.save(new Course(3, "Python", "Unmeshanam"));
 
 		
-		repository.deleteById(1);
-		System.out.println(repository.findById(2));
+		repository.deleteById(1l);
+		System.out.println(repository.findById(2l));
 
 		
 	}
