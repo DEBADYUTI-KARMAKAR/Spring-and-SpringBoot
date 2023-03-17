@@ -22,9 +22,9 @@ public class CourseCommandLineRunner implements CommandLineRunner {
 	
 	@Override
 	public void run(String... args) throws Exception {
-		repository.save(new Course(1, "AWS", "Unmeshanam"));
-		repository.save(new Course(2, "JavaJPA", "Unmeshanam"));
-		repository.save(new Course(3, "Python", "Unmeshanam"));
+		repository.save(new Course(1, "AWS", "Unmeshanam",5000));
+		repository.save(new Course(2, "JavaJPA", "Unmeshanam",9999));
+		repository.save(new Course(3, "Python", "Unmeshanam",5600));
 
 		
 		repository.deleteById(1l);
