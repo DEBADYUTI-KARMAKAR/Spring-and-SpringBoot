@@ -13,5 +13,11 @@ public class SayHelloController {
 	@ResponseBody
 	public String sayHello() {
 		return "Hello everyone";
-	}
+	} 
+	
+	@RequestMapping("say-hello-html")
+	@ResponseBody
+	public String sayHelloHtml() {
+		return "<h1>Hello everyone</h1>";
+	} 
 }
