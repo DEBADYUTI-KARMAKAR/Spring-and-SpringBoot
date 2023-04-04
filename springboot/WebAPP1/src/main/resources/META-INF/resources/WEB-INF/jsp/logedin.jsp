@@ -4,13 +4,7 @@
 </head>
 <body>
 
-<h1>Welcome to login page</h1>
-<form action="">
-Name:  <input>
-<br>
-Password: <input>
-<br>
-<button>Login</button>
-</form>
+<h1>Hello ${name} Welcome to login page</h1>
+
 </body>
 </html>
