@@ -4,7 +4,7 @@
 </head>
 <body>
 
-	<h1>Welcome ${name} you are logedin Your Password is ${password}</h1>
+	<h1>Welcome ${name} you are logedin </h1>
 
 </body>
 </html>
